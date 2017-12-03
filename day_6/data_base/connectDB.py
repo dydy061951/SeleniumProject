@@ -15,7 +15,7 @@ def connDb():
     #想获取数据库中最新的记录，那么就要把数据库所有记录倒叙排列
     #然后用 fetchone() 获取第一条记录，即数据库最新的记录.   fetch 抓取的意思
     result=curs.fetchone()
-    #conn.commit() 增加、删除、修改，只需要commit就可以了
+    #conn.commit() 增加、删除、修改，只需要commit()就可以了
     #如果想获取所有的查询结果，则用 fetchall()
     result_all=curs.fetchall()
     return result
